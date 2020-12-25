@@ -34,11 +34,12 @@ namespace EmailSendingWorkerService
             return base.StartAsync(cancellationToken);
         }
 
-        private void OnRenamed(object sender, RenamedEventArgs e)
+        private async void OnRenamed(object sender, RenamedEventArgs e)
         {
             var message = new Message(new string[] { "workerservicetest@gmail.com" }, "Your file was renamed",
                 $"File {e.Name} was renamed", e.FullPath);
             _logger.LogInformation("Trying to send email for " + message.To.First());
+            _sender.SendEmail(message);
         }
 
         private async void OnChanged(object sender, FileSystemEventArgs e)
@@ -46,7 +47,7 @@ namespace EmailSendingWorkerService
             var message = new Message(new string[] { "workerservicetest@gmail.com" }, "Your file was changed",
                 $"File {e.Name} was changed", e.FullPath);
             _logger.LogInformation("Trying to send email for " + message.To.First());
-            await _sender.SendEmail(message);
+             _sender.SendEmail(message);
         }
 
         private async void OnDeleted(object sender, FileSystemEventArgs e)
@@ -54,7 +55,7 @@ namespace EmailSendingWorkerService
             var message = new Message(new string[] { "workerservicetest@gmail.com" }, "Your file was deleted",
                 $"File {e.Name} was deleted", directoryPath);
             _logger.LogInformation("Trying to send email for " + message.To.First());
-            await _sender.SendEmail(message);
+             _sender.SendEmail(message);
         }
 
         private async void OnCreated(object sender, FileSystemEventArgs e)
@@ -62,7 +63,7 @@ namespace EmailSendingWorkerService
             var message = new Message(new string[] { "workerservicetest@gmail.com" }, 
                 "Your file was created", $"File {e.Name} was created", e.FullPath);
             _logger.LogInformation("Trying to send email for " + message.To.First());
-            await _sender.SendEmail(message);
+             _sender.SendEmail(message);
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
