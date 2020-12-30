@@ -1,9 +1,0 @@
-C:\Users\ASUS\source\repos\EmailSendingWorkerService\EmailService\bin\Debug\netcoreapp3.1\EmailService.deps.json
-C:\Users\ASUS\source\repos\EmailSendingWorkerService\EmailService\bin\Debug\netcoreapp3.1\EmailService.dll
-C:\Users\ASUS\source\repos\EmailSendingWorkerService\EmailService\obj\Debug\netcoreapp3.1\EmailService.csprojAssemblyReference.cache
-C:\Users\ASUS\source\repos\EmailSendingWorkerService\EmailService\obj\Debug\netcoreapp3.1\EmailService.AssemblyInfoInputs.cache
-C:\Users\ASUS\source\repos\EmailSendingWorkerService\EmailService\obj\Debug\netcoreapp3.1\EmailService.AssemblyInfo.cs
-C:\Users\ASUS\source\repos\EmailSendingWorkerService\EmailService\bin\Debug\netcoreapp3.1\EmailService.pdb
-C:\Users\ASUS\source\repos\EmailSendingWorkerService\EmailService\obj\Debug\netcoreapp3.1\EmailService.csproj.CoreCompileInputs.cache
-C:\Users\ASUS\source\repos\EmailSendingWorkerService\EmailService\obj\Debug\netcoreapp3.1\EmailService.dll
-C:\Users\ASUS\source\repos\EmailSendingWorkerService\EmailService\obj\Debug\netcoreapp3.1\EmailService.pdb

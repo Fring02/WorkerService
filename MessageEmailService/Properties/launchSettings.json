@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "MessageEmailService": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
